@@ -19,5 +19,4 @@ void main(){
             printf("%d ", x);
         }
     }
-    
 }
