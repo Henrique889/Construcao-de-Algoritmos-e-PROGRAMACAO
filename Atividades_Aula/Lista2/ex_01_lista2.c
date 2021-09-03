@@ -13,7 +13,7 @@ void main(){
     }
 
     for(int i = 3-1; i >= 0;i--){
-        printf("%d", vetor[i]);
+        printf("%d\n", vetor[i]);
     }
 
 }
