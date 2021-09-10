@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 void main(){
-    char vetor[10];
+    char vetor[9];
     int consoantes = 0;
 
     vetor[0] = 'a';
@@ -15,9 +15,8 @@ void main(){
     vetor[7] = 'l';
     vetor[8] = 'j';
     vetor[9] = 'm';
-    vetor[10] = 'u';
 	
-    for(int i=0; i < 10; i++){
+    for(int i=0; i < 9; i++){
         if((vetor[i] != 'a') && (vetor[i] != 'e') && (vetor[i] != 'i') && (vetor[i] != 'o') && (vetor[i] != 'u')){
             consoantes += 1;  
             printf("%c\n", vetor[i]);
