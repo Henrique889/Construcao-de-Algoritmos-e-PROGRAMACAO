@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 void main(){
-    int j=0, k=0,vetorA[10], vetorB[10], vetorC[10], vetor4[30];
+    int j=0, vetorA[10], vetorB[10], vetorC[10], vetor4[30];
 
     vetorA[0] = 1;
     vetorA[1] = 5;
@@ -28,7 +28,7 @@ void main(){
 
     vetorC[0] = 21;
     vetorC[1] = 25;
-    vetorC[2] = 20;
+    vetorC[2] = 24;
     vetorC[3] = 29;
     vetorC[4] = 22;
     vetorC[5] = 23;
@@ -37,14 +37,22 @@ void main(){
     vetorC[8] = 26;
     vetorC[9] = 30;
 
-    for(int i = 0; i < 30; i++){
-        vetor4[i+1] = vetorA[i];
-        vetor4[i*2] = vetorB[i];
+    for(int i = 0; i < 10; i++){
+        vetor4[j] = vetorA[i];
+        j += 3;
+    }
+    j=1;
+    for(int i = 0; i < 10; i++){
+        vetor4[j] = vetorB[i];
+        j += 3;
+    }
+    j=2;
+    for(int i = 0; i < 10; i++){
         vetor4[j] = vetorC[i];
-        j += 1;
+        j += 3;
     }
 
-    for (int i=0; i<(3*10); i++) {
-        printf("%2d\n", vetor4[i]); 
+    for (int i=0; i< 30; i++) {
+        printf("Vetor %d, %d\n", i+1 ,vetor4[i]); 
     }
 }
