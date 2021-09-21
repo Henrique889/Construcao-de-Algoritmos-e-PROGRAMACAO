@@ -6,7 +6,7 @@ int main(){
     char mes[12];
     float media = 0;
 
-    char meses[12] = {("Janeiro", "Fevereiro", "MarÃ§o", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro")};
+    char meses[12] = {("Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro")};
 
     mes[1] = ("Janeiro");
     mes[2] = ("Fevereiro");
