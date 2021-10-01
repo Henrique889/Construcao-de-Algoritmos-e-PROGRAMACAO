@@ -1,15 +1,15 @@
 #include <stdio.h>
 
-void imprime (int num);
+void imprimir (int num);
 
 void main(){
-    imprime(20);
+    imprimir(20);
 }
 
-void imprime(int num){
+void imprimir(int num){
     for(int i = 0; i <= num; i++){
         for(int j = 0; j < i; j++){
-            printf(" %d", i);
+            printf(" %d", j+1);
         }
         printf("\n");
     }
