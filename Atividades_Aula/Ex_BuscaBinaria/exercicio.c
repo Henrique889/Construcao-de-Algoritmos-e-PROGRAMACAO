@@ -38,6 +38,5 @@ int BuscaBinaria(int vetor[],int item){
     } 
     printf("\n %d vezes pulou a posicao do vetor", cont);   
   }
-  
   return -1;
 }
