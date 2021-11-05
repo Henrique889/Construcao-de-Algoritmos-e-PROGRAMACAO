@@ -1,10 +1,15 @@
 #include <stdio.h>
+#include <string.h>
+
 int BuscaBinaria(int vetor[], int item);
 void BuscaSequencial(int vetor[], int item, int contador);
 
 int main(void) {
   int numero[] = {2,4,6,7,9,10,13,24,56,300};
   int contadorS = 0;
+  FILE *fp;
+
+  fp = fopen("file.txt","w+");
 
   for(int i = 0; i < 10; i++){
     int item = numero[i];
@@ -13,7 +18,10 @@ int main(void) {
     printf("\n  BUSCA SEQUENCIAL: ");
     BuscaSequencial(numero,item,contadorS);
     printf("\n ");
+    fprintf(fp, "Item: %d \n", item);
   }
+
+  fclose(fp);
   
   return 0;
 }
